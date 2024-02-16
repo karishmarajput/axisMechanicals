@@ -1,0 +1,21 @@
+.missionMain{
+    min-height: 50vh;
+    padding: 1rem;
+    padding-top: 2rem;
+    background-color: #12334E;
+    color: white;
+}
+.missionMain span{
+    font-weight: 400;
+    border-bottom: 2px solid #2977B1;
+    
+}
+.missionMain h1{
+    padding: 2rem 0rem;
+}
+@media screen and (max-width: 600px){
+ 
+    /* .missionMain span{
+        font-size: 1.5rem;
+    } */
+}

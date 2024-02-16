@@ -1,0 +1,114 @@
+.footerMain{
+    min-height: 50vh;
+    padding: 1rem;
+    padding-top: 2rem;
+    background-color: #12334E;
+    color: #D1D4D6;
+}
+.footerMain span{
+    font-weight: 400;
+    border-bottom: 2px solid #2977B1;
+    
+}
+.footerMain h1{
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-align: left;
+    /* padding-left: 1rem; */
+}
+.footerDiv{
+    display: flex;
+}
+.footerInsideDiv{
+    width: 33%;
+}
+.footer-links {
+    list-style-type: circle; 
+    text-align: left;
+ 
+  }
+  .footer-links a{
+    text-decoration: none;
+    color: #abb8cc;
+  }
+  .footer-links p{
+    color: #abb8cc;
+  }
+  
+  
+  /* .footer-links li::before {
+    content: ">>";
+    color: #abb8cc;
+    margin-right: 20px; 
+  } */
+  
+  .footer-links a:hover{
+   
+    color: white;
+  }
+  .footer-links p:hover{
+    color: white;
+  }
+  .footer-links:hover{
+    color: white;
+  }
+.findUs{
+    font-size: 2rem;
+    display: flex;
+  
+    width: 100% !important;
+}
+.findUs a{
+    margin: 0rem 1rem;
+}
+.chatWithUs{
+    padding: 1rem;
+
+    width: 100% !important;
+}
+.chatWithUsBtn{
+    border: 1px solid #abb8cc;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+}
+.chatWithUs svg{
+    font-size: 1.4rem;
+    vertical-align: top;
+    margin-left:1rem ;
+}
+.chatWithUsBtn:hover{
+    background-color: white;
+    color: #1B273D;
+}
+.chatWithUsBtn a:hover{
+    color: #1B273D;
+}
+.copyright{
+    background-color: #2977B1;
+    color: #abb8cc;
+    min-height: 3rem;
+  
+    text-align: center;
+    line-height: 3rem;
+    margin: 0;
+}
+.copyright p{
+    margin: 0px;
+}
+.axisMechanics{
+    padding-left: 0rem !important;
+}
+
+@media screen and (max-width: 600px) {
+    .footerDiv{
+        flex-direction: column;
+    }
+    .footerInsideDiv{
+        width: 100%;
+    }
+    .copyright{
+        line-height: 1.5rem;
+        font-size: .8rem;
+    }
+  }

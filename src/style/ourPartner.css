@@ -1,0 +1,37 @@
+.imageDivPartner{
+    display: flex !important;
+    justify-content: center;
+}
+.ourPartnerMain{
+    min-height: 70vh;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+.ourPartnerMain span{
+    font-weight: 400;
+    border-bottom: 2px solid #2977B1;
+    
+}
+.ourPartnerMain h1{
+    padding: 2rem;
+}
+.ourPartnerMain .slick-prev:before,
+.ourPartnerMain .slick-next:before {
+  color: black;
+}
+.slider-container{
+    padding-top: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+    .slick-slide img{
+        max-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ourPartnerMain{
+        min-height: 50vh;
+    }
+  }
+  

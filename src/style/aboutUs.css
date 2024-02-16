@@ -1,0 +1,13 @@
+.aboutUsMain{
+    min-height: 70vh;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+.aboutUsMain span{
+    font-weight: 400;
+    border-bottom: 2px solid #2977B1;
+    
+}
+.aboutUsMain h1{
+    padding: 2rem;
+}

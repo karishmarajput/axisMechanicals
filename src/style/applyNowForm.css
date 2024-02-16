@@ -1,0 +1,58 @@
+.applyNowForm{
+    padding: 2rem;
+    text-align: left;
+}
+.applyNowForm input,.applyNowForm textarea, .applyNowForm button{
+    margin-bottom: 1rem;
+}
+.joinusMain span{
+    font-weight: 400;
+    border-bottom: 2px solid #2977B1;
+    font-size: 1.4rem;
+    
+}
+.joinusContainer{
+    display: flex;
+    justify-content: left;
+
+}
+.joinUsApplyNow{
+    width: 50%
+}
+.applyNowComments{
+    width: 50%;
+    padding: 3rem;
+    text-align: left;
+}
+.partnerMain{
+    min-height: 100vh;
+}
+.partnerMain span{
+    font-weight: 400;
+    border-bottom: 2px solid #2977B1;
+    font-size: 1.4rem;
+}
+@media screen and (max-width: 600px) {
+.joinusContainer{
+    flex-direction: column-reverse;
+
+}
+.joinUsApplyNow{
+    width: 100%
+}
+.applyNowComments{
+    width: 100%;
+    padding: 1rem;
+    text-align:left;
+}
+.joinusMain span{
+
+    font-size: 1.2rem;
+    
+}
+.applyNowForm{
+    padding: .5rem;
+    
+}
+  }
+  
