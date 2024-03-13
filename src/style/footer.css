@@ -99,7 +99,45 @@
 .axisMechanics{
     padding-left: 0rem !important;
 }
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f0f0f0;  */
+    padding: 20px; 
+    flex-wrap: wrap;
+    flex-direction: column;
 
+  }
+  .nav-links div{
+    border-bottom: 1px solid #31313159;
+    text-align: left;
+    padding: .8rem 0rem;
+    
+    width: 220px;
+  }
+  .nav-links div:hover{
+    background-color: #f0f0f0; 
+  }
+  
+  .nav-links a {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+    padding: 10px; 
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #2977b1; 
+    padding-left: 15px;
+  }
+  
+  .linksMain{
+    display: flex;
+    padding: 3rem 0rem;
+    justify-content: space-around;
+  }
 @media screen and (max-width: 600px) {
     .footerDiv{
         flex-direction: column;
@@ -111,4 +149,7 @@
         line-height: 1.5rem;
         font-size: .8rem;
     }
+     .linksMain{
+   flex-direction: column;
+  }
   }

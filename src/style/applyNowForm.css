@@ -1,6 +1,6 @@
 .applyNowForm{
     padding: 2rem;
-    text-align: left;
+    text-align: center;
 }
 .applyNowForm input,.applyNowForm textarea, .applyNowForm button{
     margin-bottom: 1rem;
@@ -24,8 +24,12 @@
     padding: 3rem;
     text-align: left;
 }
+.partnerForm{
+    text-align: center;
+}
 .partnerMain{
-    min-height: 100vh;
+    min-height: 50vh;
+    padding: 2rem 0rem;
 }
 .partnerMain span{
     font-weight: 400;

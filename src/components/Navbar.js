@@ -11,8 +11,8 @@ const Navigation = () => {
       <Container>
         <Navbar.Brand href="/">
           <div className="brand laptop">
-          <img src={window.location.origin + '/images/logo.webp'} width="90" alt="Logo" /> 
-      
+          <img src={window.location.origin + '/logo.svg'} width="60" alt="Logo" /> 
+        &nbsp;&nbsp;
           AXIS MECHANICAL
      
           </div>

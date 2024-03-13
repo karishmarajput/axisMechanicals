@@ -7,6 +7,8 @@ import { FaFacebook,FaLinkedin,FaInstagramSquare,FaWhatsapp } from "react-icons/
 function Footer(){
     return(
         <div>
+
+
        
         <div className="footerMain">
             <div className="container footerDiv">
@@ -49,7 +51,7 @@ function Footer(){
             
         </div>
         <div className='copyright'>
-                <p>COPYRIGHT © 2023 AXIS MECHANICAL - ALL RIGHTS RESERVED.</p>
+                <p>COPYRIGHT © 2024 AXIS MECHANICAL - ALL RIGHTS RESERVED.</p>
             </div> 
         </div>
     )

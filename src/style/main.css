@@ -38,8 +38,8 @@ flex-direction: column;
     font-weight: 500;
 }
 .textMain{
-   color: #CAD0D2;
-   font-weight: 800 !important;
+   color: white;
+   font-weight: 600 !important;
 }
 @media screen and (max-width: 600px) {
     .mainText h3, .mainText h2{

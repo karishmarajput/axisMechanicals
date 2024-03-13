@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 
@@ -9,7 +9,23 @@ const Partner = () => {
   const [message, setMessage] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  useEffect(() => {
+    // Function to handle smooth scrolling to the "partnership" div
+    const scrollToPartnership = () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const scrollTo = urlParams.get('scrollTo');
 
+      if (scrollTo === 'partnership') {
+        const partnershipDiv = document.getElementById('partnership');
+        if (partnershipDiv) {
+          partnershipDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+
+    // Call the function on component mount
+    scrollToPartnership();
+  }, []); 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
@@ -38,7 +54,7 @@ const Partner = () => {
   };
 
   return (
-    <div className="partnerMain">
+    <div className="partnerMain" id="partnership">
       <h1><span>PARTNERSHIP</span></h1>
       <div className="partnerDiv container">
         <div className="partnerInstruction">
