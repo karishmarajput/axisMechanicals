@@ -13,7 +13,7 @@ function Footer(){
         <div className="footerMain">
             <div className="container footerDiv">
                 <div className="container footerInsideDiv">
-                    <h1><span>INFORMATION</span></h1>
+                    <h1 className='infoFooter'><span>INFORMATION</span></h1>
                     <ul className="footer-links">
                         <li><a href="/">Home</a></li>
                         <li><a href="/project">Projects</a></li>

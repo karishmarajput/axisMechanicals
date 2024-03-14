@@ -37,6 +37,10 @@ flex-direction: column;
     padding: .5rem;
     font-weight: 500;
 }
+.mainBtn:hover{
+    color: #12334E;
+    background-color: white;
+}
 .textMain{
    color: white;
    font-weight: 600 !important;

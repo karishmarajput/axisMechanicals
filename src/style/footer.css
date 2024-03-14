@@ -16,6 +16,9 @@
     text-align: left;
     /* padding-left: 1rem; */
 }
+.infoFooter:hover{
+  color: white;
+}
 .footerDiv{
     display: flex;
 }

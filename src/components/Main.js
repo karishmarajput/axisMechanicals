@@ -1,4 +1,5 @@
 import '../style/main.css'
+import { TypeAnimation } from 'react-type-animation';
 
 function Main(){
     return(
@@ -7,7 +8,23 @@ function Main(){
                 
                 <h3>We are experienced company</h3>
                 <h2> ALL YOU NEED FOR </h2>
-                <h1  className="textMain"> PLUMBING, HEATING, GAS FITTING</h1>
+                <h1>
+                     <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'PLUMBING',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        'HEATING',
+        1000,
+        'GAS FITTING',
+        1000
+      ]}
+      wrapper="span"
+      speed={50}
+      style={{ fontSize: '1em', display: 'inline-block' }}
+      repeat={Infinity}
+    />
+                </h1>
                 <a className='mainBtn' href="/services">Learn More</a >
             </div>
         </div>
