@@ -1,15 +1,40 @@
-// ReviewMain.js
+import React, { useEffect, useRef, useState } from "react";
+import Slider from "react-slick";
+import Review from "./Review";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React from "react";
-import Review from "./Review";
-import Slider from "react-slick";
-
+import '../style/review.css'; 
+import Typewriter from "typewriter-effect";
 function ReviewMain() {
+  const [isVisible, setIsVisible] = useState(false);
+  const reviewMainRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        rootMargin: '0px',
+        threshold: 0.5, // Adjust this threshold as needed
+      }
+    );
+
+    if (reviewMainRef.current) {
+      observer.observe(reviewMainRef.current);
+    }
+
+    return () => {
+      if (reviewMainRef.current) {
+        observer.unobserve(reviewMainRef.current);
+      }
+    };
+  }, []);
+
   const reviews = [
     { 
       stars: 5, 
-      comment: '"Exceptional performance andservice. Appreciate response and..."', 
+      comment: '"Exceptional performance and service. Appreciate response and..."', 
       photo: "/images/reviews/1.png", 
       author: "Pankaj Sharma", 
       date: "12/28/2023", 
@@ -25,7 +50,7 @@ function ReviewMain() {
     },
     { 
       stars: 5, 
-      comment:'"I’ve used Axis as my mechanical contractor for both residential an..."', 
+      comment: '"I’ve used Axis as my mechanical contractor for both residential an..."', 
       photo: "/images/reviews/3.png", 
       author: "Will Gibson", 
       date: " 3/15/2023", 
@@ -80,6 +105,7 @@ function ReviewMain() {
       link: "https://maps.app.goo.gl/8NRNEftQdF2pnktq9" 
     }
   ];
+
   const settings = {
     dots: false,
     infinite: true,
@@ -116,18 +142,27 @@ function ReviewMain() {
       }
     ]
   };
-  return (
-    <div className="reviewMain ">
 
-<h1><span>OUR REVIEWS</span> </h1>
-    <div className="slider-container container">
-      <Slider {...settings}>
-      {reviews.map((review, index) => (
+  return (
+    <div className="reviewMain">
+    <div ref={reviewMainRef} className={` ${isVisible ? 'animated fadeIn' : ''}`}>
+      <h1><span>
+      <Typewriter
+              options={{
+                strings: ['OUR REVIEWS'],
+                autoStart: true,
+                loop: true,
+              }}
+            /></span> </h1>
+      <div className="slider-container container">
+        <Slider {...settings}>
+          {reviews.map((review, index) => (
             <div key={index}>
               <Review stars={review.stars} comment={review.comment} photo={review.photo} author={review.author} date={review.date} link={review.link} />
             </div>
           ))}
-      </Slider>
+        </Slider>
+      </div>
     </div>
     </div>
   );

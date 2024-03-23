@@ -1,8 +1,8 @@
 /* FAQ.css */
 
 .faq-container {
-    padding: 2rem;
-    max-width: 1000px;
+ 
+    
     margin: 0 auto;
 
   }
@@ -13,38 +13,88 @@
     font-size: 1.2rem;
   }
   
-  .question {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    font-weight: 450;
-  }
+
   
-  .answer {
-    margin-top: 10px;
-    padding-left: 20px;
-    display: none;
-    text-align: left;
-  }
+
   
-  .active .answer {
-    display: block;
-  }
-  
-  .faqMain{
-    min-height: 70vh;
-    padding: 1rem;
-    padding-top: 2rem;
-}
+
 .faqMain h1 span{
-    font-weight: 400;
+    font-weight: 600;
   
     border-bottom: 2px solid #2977B1;
     
 }
-.faqMain h1{
-  padding: 2rem 0rem;
+
+/* faq.css */
+
+.faq-container{
+  display: flex;
+  justify-content: space-between;
 }
-.faqMain h5{
-    font-weight: 400;
+.faq-item {
+  width: 33.333%;
+  height: 250px; /* Adjust height as needed */
+  background-color: #f0f0f0; /* Background color for question box */
+  color: white;
+  padding: 2rem;
+  align-items: center;
+  margin-bottom: 10px;
+  perspective: 1000px; /* Define the perspective for 3D effects */
+  position: relative;
+  overflow: hidden;
+  font-size: 1.5rem;
+}
+.faq-item1{
+  background-color: #12334E;
+}
+
+.faq-item0, .faq-item2{
+  background-color: #1A5173;
+}
+.faq-item:hover .flipper {
+  transform: rotateY(180deg); /* Flip the box on hover */
+}
+
+.flipper {
+  transition: transform 0.6s; /* Define transition for smooth flipping */
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.question, .answer {
+  backface-visibility: hidden; /* Hide the backface of the box during animation */
+}
+
+.question {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-weight: 600;
+  font-size: 1.7rem;
+  justify-content: left;
+  
+}
+
+.answer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  transform: rotateY(180deg); /* Initially hide the answer side */
+}
+@media screen and (max-width: 600px) {
+  .faq-item{
+width: 100%;
+margin: 0;
+border: 0px;
+  }
+  .faq-container{
+    flex-direction: column;
+  }
 }

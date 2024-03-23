@@ -1,5 +1,5 @@
 .mainDiv{
-    background-image: url('../../public/images/bg.jpg');
+    background-image: url('../../public/images/bg.png');
     height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,6 +45,23 @@ flex-direction: column;
    color: white;
    font-weight: 600 !important;
 }
+/* main.css */
+
+@keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mainText {
+    animation: slideInFromLeft 1s ease-out; /* Adjust animation duration and timing function as needed */
+  }
+  
 @media screen and (max-width: 600px) {
     .mainText h3, .mainText h2{
         font-size: 1.1rem;

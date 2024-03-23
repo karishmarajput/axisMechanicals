@@ -1,13 +1,32 @@
 .aboutUsMain{
     min-height: 70vh;
-    padding: 1rem;
-    padding-top: 2rem;
+    
+    padding-top: 1rem;
 }
 .aboutUsMain span{
-    font-weight: 400;
+    font-weight: 600;
     border-bottom: 2px solid #2977B1;
     
 }
-.aboutUsMain h1{
-    padding: 2rem;
+.aboutUsTextDiv{
+    padding-bottom: 2rem;
 }
+.aboutUsMain h1{
+    padding: 1rem 0rem;
+}
+.aboutUsTextMainDiv{
+    display: flex;
+}
+.aboutUsTextMainDiv div{
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutUsImage{
+        display: none;
+    }
+     .aboutUsTextMainDiv div{
+        width: 100%;
+     }
+}
+      

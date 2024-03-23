@@ -51,6 +51,21 @@ iframe{
     width: 100%
 }
 
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+ 
+  .contactUsDiv,
+  .contactUsForm {
+    animation: slideInFromLeft 1s ease-in-out; /* Apply animation to slide in from left */
+  }
+  
 @media screen and (max-width: 600px){
     .contactMainDiv{
         flex-direction: column;

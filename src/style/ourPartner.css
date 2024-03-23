@@ -8,21 +8,27 @@
     padding-top: 2rem;
 }
 .ourPartnerMain span{
-    font-weight: 400;
+    font-weight: 600;
     border-bottom: 2px solid #2977B1;
     
 }
 .ourPartnerMain h1{
     padding: 2rem;
 }
-.ourPartnerMain .slick-prev:before,
-.ourPartnerMain .slick-next:before {
-  color: black;
-}
-.slider-container{
-    padding-top: 3rem;
-}
 
+.slider-container{
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.imageDivPartner{
+    padding: 1rem;
+   
+}
+.imageDivPartner img{
+    max-width: 70vw;
+}
 @media screen and (max-width: 600px) {
     .slick-slide img{
         max-width: 200px;

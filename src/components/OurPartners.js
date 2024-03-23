@@ -1,10 +1,35 @@
+import React, { useEffect, useRef, useState } from "react";
+import Slider from "react-slick";
+import '../style/ourPartner.css'; // Add your CSS file for OurPartner
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React from "react";
-import '../style/ourPartner.css'
-import Slider from "react-slick";
-
+import Typewriter from "typewriter-effect";
 function OurPartner() {
+  const [isVisible, setIsVisible] = useState(false);
+  const ourPartnerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        rootMargin: '0px',
+        threshold: 0.5, // Adjust this threshold as needed
+      }
+    );
+
+    if (ourPartnerRef.current) {
+      observer.observe(ourPartnerRef.current);
+    }
+
+    return () => {
+      if (ourPartnerRef.current) {
+        observer.unobserve(ourPartnerRef.current);
+      }
+    };
+  }, []);
+
   const ourPartner = [
     {
       img:'/images/ourPartners/1.webp',
@@ -21,7 +46,7 @@ function OurPartner() {
     {
       img:'/images/ourPartners/5.webp',
     },
-  ]
+  ];
  
   const settings = {
     dots: false,
@@ -59,19 +84,20 @@ function OurPartner() {
       }
     ]
   };
-  return (
-    <div className="ourPartnerMain ">
 
-<h1><span>OUR PARTNERS</span> </h1>
-    <div className="slider-container container">
-      <Slider {...settings}>
-      {ourPartner.map((img, index) => (
-            <div key={index}  className="imageDivPartner">
-              <img src={img.img}/>
+  return (
+    <div ref={ourPartnerRef} className={`ourPartnerMain ${isVisible ? 'animated fadeIn' : ''}`}>
+      <h1><span>
+      OUR PARTNERS</span> </h1>
+      <div className="slider-container container">
+       
+          {ourPartner.map((img, index) => (
+            <div key={index} className="imageDivPartner">
+              <img src={img.img} alt={`Partner ${index + 1}`}  />
             </div>
           ))}
-      </Slider>
-    </div>
+      
+      </div>
     </div>
   );
 }

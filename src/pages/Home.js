@@ -8,15 +8,17 @@ import ReviewMain from "../components/ReviewMain"
 import OurPartner from "../components/OurPartners"
 import Links from "../components/Links"
 import Footer from "../components/Footer"
+import HomeServices from "../components/HomeServices"
 function Home(){
     return(
         <div>
             <Navigation/>
             <Main/>
             <AboutUs/>
+            <HomeServices/>
             <Mission/>
             <FAQ/>
-            <ReviewMain/>
+            {/* <ReviewMain/> */}
             <OurPartner/>
             <Links/>
             <Footer/>

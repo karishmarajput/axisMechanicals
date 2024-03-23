@@ -1,16 +1,25 @@
 import Navigation from "../components/Navbar";
 import Footer from "../components/Footer";
-import '../style/contactUs.css';
+import '../style/contactUs.css'; // Import the CSS file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhone, faEnvelope, faClock } from '@fortawesome/free-solid-svg-icons';
 import { FaFacebook,FaLinkedin,FaInstagramSquare,FaWhatsapp } from "react-icons/fa";
 import ContactForm from "../components/ContactForm";
+import Typewriter from "typewriter-effect";
+
 function ContactUs(){
     return(
         <div>
             <Navigation/>
             <div className="contactUsDiv container">
-            <h1><span>CONTACT US</span></h1>
+            <h1><span>
+            <Typewriter
+              options={{
+                strings: ['CONTACT US'],
+                autoStart: true,
+                loop: true,
+              }}
+            /></span></h1><br/>
          <div>
          <div className="contactText">
                 <h4>Better yet, see us in person!</h4>
@@ -53,7 +62,14 @@ function ContactUs(){
             
          </div>
          <div className="contactUsForm container">
-         <h1><span>CONTACT FORM</span></h1>
+         <h1><span>
+         <Typewriter
+              options={{
+                strings: ['CONTACT FORM'],
+                autoStart: true,
+                loop: true,
+              }}
+            /></span></h1>
             <ContactForm/>
          </div>
             </div>
@@ -61,4 +77,5 @@ function ContactUs(){
         </div>
     )
 }
+
 export default ContactUs;
