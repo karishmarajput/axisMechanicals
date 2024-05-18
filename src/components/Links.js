@@ -29,8 +29,10 @@ function Links() {
 
   return (
     <div ref={linksRef} className={`linksMain container ${isVisible ? 'animated fadeIn' : ''}`}>
-      <div>
-        <img src="/logo.svg" width={'200px'} alt="Logo" />
+      <div className="makeItHappen">
+        <h1>
+          MAKE IT <br/>HAPPEN
+        </h1>
       </div>
       <div>
         <div className='nav-links'>

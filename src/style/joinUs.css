@@ -1,20 +1,70 @@
-.joinusMain{
-    min-height: 100vh;
+.joinBg {
+  align-items: left !important;
+  background-attachment: fixed;
+  background-image: url(../../public/images/JoinUsBg.png) !important;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 2rem;
 }
-/* joinUs.css */
+.whyJoin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 4rem;
+}
+.whyJoin div {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 500;
+  justify-content: center;
+  min-height: 200px;
+  text-align: center;
+  width: 25%;
+}
+.whyJoin1,.whyJoin3 {
+  background-color: #12334e;
+}
+.whyJoin2,.whyJoin4 {
+  background-color: #1a5173;
+}
+.joinusMain {
+  animation: slideInFromLeft .5s ease-in-out;
+}
+.joinusMain {
+  padding-bottom: 4rem;
+}
+.joinUsApplyNow {
+  width: 100%;
+}
+.joinUsApplyNow h1 {
+  font-size: 2.5rem;
+}
+.applyNowForm {
+  padding: 2rem 0;
+  text-align: center;
+}
+.partnerMain span {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.partnerForm {
+  text-align: center;
+}
 
-/* Define the animation */
-@keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+@media screen and (max-width: 600px) {
+  .whyJoin{
+    flex-direction: column;
   }
-  
-  /* Apply animation to specific elements */
-  .joinusMain {
-    animation: slideInFromLeft 0.5s ease-in-out; /* Apply animation to slide in from left */
+  .whyJoin div{
+    width: 100%;
   }
-  
+}
+    

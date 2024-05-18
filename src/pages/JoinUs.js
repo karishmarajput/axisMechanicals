@@ -8,33 +8,50 @@ function JoinUs(){
     return(
         <div>
             <Navigation/>
-            <div className="joinusMain">
+            <div className=" joinBg">
+                
                 <h1><span>
-                <Typewriter
-              options={{
-                strings: ['JOIN OUR TEAM TODAY!'],
-                autoStart: true,
-                loop: true,
-              }}
-            /> </span></h1>
-                <div className="joinusContainer container">
-                    <div className="joinUsApplyNow">
-                        <ApplyNow/>
-                    </div>
-                    <div className="applyNowComments">
-                        <p>We are always looking forward to hiring and expanding our team with professional and deserving candidates.</p>
-                        <ul>
-                            <li>Competitive salary</li>
-                            <li>Extended Medical Benefits</li>
-                            <li>On-the-job Training</li>
-                            <li>Supportive Staff</li>
-                        </ul>
-                        <br/>
-                        <p>Call us today to join the Team.</p>
+                JOIN OUR TEAM TODAY! </span></h1>
+                <div className="contactText">
+                    <h5>
+                    We are always looking forward to hiring and expanding our team with professional and deserving candidates.
+                    </h5>
+                    <h4>
+                    Call us today to join the Team.
+                    </h4>
+                    <br/>
+                    <a class="mainBtn joinUsBtn" href="#joinUsForm">Apply Now</a>
+                </div>
+            </div>
+            <div class="whyJoin">
+                <div class="whyJoin1">
+                    Competitive salary
+                </div>
+                <div class="whyJoin2">
+                    Extended Medical Benefits
+                </div>
+                <div class="whyJoin3">
+                    On-the-job Training
+                </div>
+                <div class="whyJoin4">
+                    Supportive Staff
+                </div>
+            </div>
+            <div class="joinusMain">
+                <div class="joinusContainer container">
+                    <div id="joinUsForm" class="joinUsApplyNow">
+                        <h1>APPLY NOW</h1>
+                        <div class="applyNowForm ">
+                            <ApplyNow/>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="partnerMain container" id="partnership">
             <Partner/>
+            </div>
+         
+           
             <Footer/>
         </div>
     )

@@ -1,117 +1,60 @@
-.projectMain{
-    min-height: 100vh;
-    margin: 2rem;
+.projectsBg {
+  background-image: url(../../public/images/ProjectsBGpng.png) !important;
 }
-.projectMain span{
-    font-weight: 400;
-    font-size: 1.8rem;
-    border-bottom: 2px solid #2977B1;
-    
+.fadeIn {
+  animation-name: fadeIn;
 }
-/* project.css */
-
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
 .project-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    grid-gap: 20px;
-    padding: 2rem;
-  }
-  
-  .project-item {
-    position: relative;
-    overflow: hidden;
-    width: 400px;
-    height: 250px;
-    display: flex; /* Added to center-align items */
-    justify-content: center; /* Added to center-align items */
-    align-items: center; /* Added to center-align items */
-  }
-  
-  .project-image {
-    max-width: 100%; /* Updated to allow images to shrink */
-    max-height: 100%; /* Updated to allow images to shrink */
-    transition: transform 0.3s ease;
-    width: 400px;
-    height: 250px;
-  }
-  
-  .project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
- 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    
-  }
-  
-  .project-name {
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .project-item:hover .project-overlay {
-    opacity: 1;
-  }
-
-
-
-/* Style for project images */
-.project-image {
-
-  transition: transform 0.3s ease-in-out; /* Add transition for smooth hover effect */
-}
-
-/* Style for project overlay */
-.project-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  grid-gap: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0; /* Initially hidden */
-  transition: opacity 0.3s ease-in-out; /* Add transition for smooth fade effect */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.projectMain {
+  margin: 2rem 0;
+  min-height: 100vh;
+}
+.animated {
+  animation: fadeIn 1s ease-in-out;
+}
+.project-item {
+  box-shadow: 0 4px 8px 0 #0003, 0 6px 20px 0 #00000030;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  min-height: 450px;
+  overflow: hidden;
+  padding: 1rem;
+  position: relative;
+  width: 350px;
+}
+.project-image {
+  height: 300px;
+  max-height: 100%;
+  max-width: 100%;
+  transition: transform .3s ease;
+  transition: transform .3s ease-in-out;
+  width: 400px;
+}
+.projectName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  text-align: left;
+}
+.projectCategory {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top: 1rem;
 }
 
-/* Style for project name */
-.project-name {
-  color: #fff;
-  font-size: 1.5rem; /* Adjust font size */
-  font-weight: bold;
-}
-
-/* Hover effect */
-.project-item:hover .project-image {
-  transform: scale(1.1); /* Scale up the image on hover */
-}
-
-.project-item:hover .project-overlay {
-  opacity: 1; /* Show overlay on hover */
-}
-
-  @media screen and (max-width: 600px) {
-    .project-item, .project-image {
-        width: 250px;
-        height: 150px;
-        
-      }
-      .project-name{
-        font-size: 1rem;
-      }
-      .projectMain span{
-        font-size: 1.4rem;
-      }
+@media screen and (max-width: 600px) {
+  .project-item{
+    min-height: 550px;
   }
-  
+}

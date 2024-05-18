@@ -33,7 +33,7 @@
 }
 .faq-item {
   width: 33.333%;
-  height: 250px; /* Adjust height as needed */
+  height: 300px; /* Adjust height as needed */
   background-color: #f0f0f0; /* Background color for question box */
   color: white;
   padding: 2rem;

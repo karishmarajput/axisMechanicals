@@ -145,7 +145,19 @@
     justify-content: space-around;
   }
   .linksMain div{
-    text-align: center;
+    text-align: left;
+  }
+
+  .makeItHappen{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    
+  }
+  .makeItHappen h1{
+    font-size: 4rem;
+    font-weight: 600
   }
 @media screen and (max-width: 600px) {
     .footerDiv{

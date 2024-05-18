@@ -13,16 +13,30 @@ const ServiceDetails = ({ services }) => {
   return (
     <div>
       <Navigation/>
-      <div className="services service-details-container">
-        <h2 className="service-name"><span>{service.serviceName}</span></h2>
-        <img src={service.photo} alt={service.serviceName} className="service-image" />
-        <p className="service-detailss">{service.details}</p>
-        <ul className="service-points">
-          {service.points.map((point, index) => (
-            <li key={index} className="point-item">{point}</li>
+      <div className="serviceDetailMain">
+      <div className='serviceDetailsImgContainer' style={{backgroundImage: `url('${service.photo}')`}}>
+          <div className='serviceMainText'>
+            <h1>
+              <span>
+                OUR SERVICES: {service.serviceName}
+              </span>
+            </h1>
+          </div>
+        </div>
+        <div className=' services service-details-container container'>
+            <p className='service-details'>
+              {service.details}
+            </p>
+            <div className='service-points'>
+            {service.points.map((point, index) => (
+            <div key={index} className="point-item">
+              <div className='point-box'>
+                {point}</div>
+                </div>
           ))}
-        </ul>
-      </div>
+            </div>
+        </div>
+        </div>
       <Footer/>
     </div>
   );

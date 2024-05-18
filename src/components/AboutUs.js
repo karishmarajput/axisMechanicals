@@ -37,9 +37,9 @@ function AboutUs() {
           <span>ABOUT US </span>
         </h1>
           <p>
-          You have arrived at the right place if you are searching for reliable PLUMBING, HEATING, GAS FITTING & BACKFLOW TESTING SERVICES. Axis Mechanical Ltd started its journey to provide top-grade, professional and trusted plumbing and heating services. With10+ Years of experience in this industry we have been providing clients across the lower mainland & Fraser Valley. We specialize in New Construction( Commercial, Multi-residential, custom Homes) Tenant Improvements(Office Space, Retail, Restaurants) Service ( Commercial & Residential) <br />
-          <br />
-          Our Team is well-trained and familiar with industry specifications, and they also have familiarity with the equipment and technology. They take care of the project from start to end. We have experience dealing with all types of plumbing, heating, gas fitting, and other similar issues. Our top-notch and affordable services have helped us become the leading mechanical service provider in the lower mainland and Fraser Valley area.
+          Axis Mechanical Ltd - your trusted source for top-grade plumbing, heating, and gas fitting solutions. With over a decade of industry expertise, we specialize in new construction projects (commercial, multi-residential, custom homes) and tenant improvements (office space, retail, restaurants).
+</p><p>
+Our skilled team is equipped with industry know-how and cutting-edge technology to handle your project from start to finish. Count on us for reliable, affordable solutions that set the standard in the Lower Mainland and Fraser Valley. Get in touch today!
         </p>
           </div>
           <div className='aboutUsImage'>
