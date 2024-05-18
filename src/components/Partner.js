@@ -56,7 +56,7 @@ const Partner = () => {
   return (
     <div className="partnerMain" id="partnership">
       <h1><span>PARTNERSHIP</span></h1>
-      <div className="partnerDiv container">
+      <div className="partnerDiv ">
         <div className="partnerInstruction">
           <p>Fill out the form below to get started with partnership:</p>
         </div>
