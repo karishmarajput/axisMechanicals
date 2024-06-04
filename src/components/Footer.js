@@ -24,7 +24,7 @@ function Footer(){
                     </ul>
                 </div>
                 <div className="container footerInsideDiv footer-links">
-                    <h1 className="axisMechanics"><span>AXIS MECHANICAL OFFICE</span></h1>
+                    <h1 className="axisMechanics"><span>REACH US</span></h1>
                     <p><FontAwesomeIcon icon={faMapMarkerAlt} /> Surrey, British Columbia, Canada</p>
                     <p><FontAwesomeIcon icon={faPhone} /> +1(604) 773-0957</p>
                     <p><FontAwesomeIcon icon={faEnvelope} />  <a href="mailto:Info@axismechanical.ca">Info@axismechanical.ca</a></p>
@@ -37,14 +37,14 @@ function Footer(){
                         <a href='https://www.linkedin.com/company/axis-mechanical/'  target="_blank"><FaLinkedin /></a>
                         <a href="https://www.instagram.com/axismechanical_" target="_blank"><FaInstagramSquare/></a>
                     </div>
-                    <div className='chatWithUs'>
+                    {/* <div className='chatWithUs'>
                     <a href="https://api.whatsapp.com/send/?phone=16047730049&text&type=phone_number&app_absent=0" target="_blank">
                         <div className='chatWithUsBtn'>
                            Chat with us <FaWhatsapp/> 
                         </div>
                         </a>
 
-                    </div>
+                    </div> */}
                     
                 </div>
             </div>

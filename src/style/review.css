@@ -6,6 +6,14 @@
     justify-content: center;
     margin: 1rem;
   }
+
+  .slick-slider{
+    width: 100%;
+  }
+  .slider-image{
+    padding: 1rem;
+
+  }
   .reviewMain{
     min-height: 50vh;
     padding: 1rem;

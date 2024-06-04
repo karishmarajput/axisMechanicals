@@ -33,7 +33,7 @@ function ContactUs(){
                 </div>
               
           
-                <div class="contactMainDiv">
+                {/* <div class="contactMainDiv">
                 <div class="addressDiv">
                 <h1 class="axisMechanicsContact">
                 <span>AXIS MECHANICAL OFFICE</span>
@@ -62,7 +62,7 @@ function ContactUs(){
                     </div>
                  </div>
                
-            </div>
+                </div> */}
         </div>
      
 

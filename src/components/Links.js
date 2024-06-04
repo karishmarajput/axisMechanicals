@@ -35,7 +35,7 @@ function Links() {
         </h1>
       </div>
       <div>
-        <div className='nav-links'>
+        <div className='nav-links footerLinks'>
           <div>
             <a href='/contact-us'>Contact Us</a>
           </div>

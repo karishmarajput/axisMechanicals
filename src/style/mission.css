@@ -1,5 +1,5 @@
 .missionMain{
-    min-height: 50vh;
+    min-height: 60vh;
 
     padding-top: 2rem;
    
@@ -20,20 +20,7 @@
 .missionMain h1 span{
   font-weight: 600;
 }
-@keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px); /* Optional: Slide up animation */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .animated {
-    animation: fadeIn 1s ease-in-out;
-  }
+
   
   
 @media screen and (max-width: 600px){

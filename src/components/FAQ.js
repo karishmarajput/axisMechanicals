@@ -15,6 +15,10 @@ const questions = [
       question: 'Do I need to get permits or is that covered under the repair/work costs?',
       answer: 'Any permits or inspections needed to complete the job are covered in our fees and handled accordingly. For Regular maintenance and repairs a permit is usually not required.'
     },
+    {
+      question: 'Is my construction covered under the insurance?',
+      answer:'Yes, We are fully insured and certified.'
+    },
 ];
 
 const FAQ = () => {

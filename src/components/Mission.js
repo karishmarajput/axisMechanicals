@@ -30,8 +30,8 @@ function Mission() {
 
   return (
     <div className={`missionMain container`}>
-      <div ref={missionRef} className={`container  ${isVisible ? 'animated fadeIn' : ''}`}>
-      <div className='aboutUsTextMainDiv'>
+      <div ref={missionRef} className={`container `}>
+      <div className=''>
           <div className='aboutUsTextDiv'>
           <h1 className='aboutHeading'>
           <span>OUR MISSION</span>
@@ -43,9 +43,9 @@ function Mission() {
           and transparency throughout the project.
         </p>
           </div>
-          <div className='aboutUsImage'>
+          {/* <div className='aboutUsImage'>
             <img src='/images/OurMission.png' width={"100%"} height={"100%"}/>
-          </div>
+          </div> */}
         </div>
         
       </div>

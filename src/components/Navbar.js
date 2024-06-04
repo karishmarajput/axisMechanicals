@@ -31,7 +31,7 @@ const Navigation = () => {
             <NavLink exact to="/" className="nav-link" activeClassName="active"><span>Home</span></NavLink>
             {/* <NavLink to="#aboutUs" className="nav-link" activeClassName="active">About Us</NavLink> */}
             <NavLink to="/services" className="nav-link" activeClassName="active"><span>Services</span></NavLink>
-            <NavLink to="/project" className="nav-link" activeClassName="active"><span>Project</span></NavLink>
+            <NavLink to="/project" className="nav-link" activeClassName="active"><span>Projects</span></NavLink>
             <NavLink to="/contact-us" className="nav-link" activeClassName="active"><span>Contact Us</span></NavLink>
             <NavLink to="/join-us" className="nav-link" activeClassName="active"><span>Join Us</span></NavLink>
           </Nav>

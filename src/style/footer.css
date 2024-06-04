@@ -166,6 +166,9 @@
     .footerInsideDiv{
         width: 100%;
     }
+    .footerMain h1 {
+       padding: 0rem;
+    }
     .copyright{
         line-height: 1.5rem;
         font-size: .8rem;
@@ -173,4 +176,10 @@
      .linksMain{
    flex-direction: column;
   }
+  .footerLinks{
+    display: block;
+    padding: 0%;
+  
+  }
+
   }

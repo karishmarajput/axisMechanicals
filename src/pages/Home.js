@@ -18,8 +18,9 @@ function Home(){
             <HomeServices/>
             <Mission/>
             <FAQ/>
-            {/* <ReviewMain/> */}
+         
             <OurPartner/>
+               <ReviewMain/>
             <Links/>
             <Footer/>
         </div>

@@ -18,6 +18,15 @@ function Services({ services }) {
        
         <div className="services-container container">
         <div className="HomeServicesContainer serviceContainer">
+
+
+        <a className="details-link" href="/services/1">
+        <div className='service'>
+                <img src="/images/HomeServices/plumbing.png" width={'100px'} height={'100px'}></img> 
+                <h1>PLUMBING</h1>
+                <p>Professional and Trusted Solutions for all<br/>  your New Construction Needs</p>
+                </div>
+        </a>
           <a className="details-link" href="/services/2">
           <div className='service'>
           <img src="/images/HomeServices/heating.png" width={'100px'} height={'100px'}className="imgStyleService"></img> 
@@ -25,13 +34,7 @@ function Services({ services }) {
             <p >Professional Heating System Installation, Repair, <br/>and Maintenance at Your Doorstep</p>
             </div>
           </a>
-<a className="details-link" href="/services/1">
-<div className='service'>
-        <img src="/images/HomeServices/plumbing.png" width={'100px'} height={'100px'}></img> 
-        <h1>PLUMBING</h1>
-        <p>Professional Plumbing Services – Get Bespoke <br/>Solutions at Best Prices</p>
-        </div>
-</a>
+
 
 <a className="details-link" href="/services/3">
 <div className='service'>
@@ -39,13 +42,13 @@ function Services({ services }) {
         <p>Trust Axis Mechanical for Safe and Reliable <br/>Gas Fitting Installation</p>
         </div>
 </a>
-<a className="details-link" href="/services/4">
+{/* <a className="details-link" href="/services/4">
 <div className='service'>
         <img src="/images/HomeServices/hvac.png" width={'100px'} height={'100px'}></img> 
         <h1>HVAC</h1>
         <p>Professional HVAC Installation, Repairs <br/>and Maintenance at Your Doorstep</p>
         </div>
-</a>
+</a> */}
 
 
        </div>

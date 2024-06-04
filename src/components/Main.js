@@ -6,8 +6,8 @@ function Main() {
   return (
     <div className='mainDiv'>
       <div className='mainText'>
-        <h3>We are an experienced company</h3>
-        <h2>ALL YOU NEED FOR</h2>
+        {/* <h3>We are an experienced company</h3> */}
+        <h2>YOUR TRUSTED CONSTRUCTION PARTNER FOR</h2>
         <h1>
           <TypeAnimation
             sequence={[

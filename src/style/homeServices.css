@@ -6,7 +6,7 @@
 
 .homeService1{
     background-color: #12334E;
-    width: 50%;
+    width: 34%;
     min-height: 250px;
     color: white;
     display: flex;
@@ -24,7 +24,7 @@
 }
 .homeService2{
     background-color: #1A5173;
-    width: 50%;
+    width: 33%;
     min-height: 250px;
     color: white;
     flex-direction: column;
@@ -37,7 +37,7 @@
 }
 .homeService3{
     background-color: #1A5173;
-    width: 50%;
+    width: 33%;
     min-height: 250px;
     color: white;
     flex-direction: column;
@@ -64,3 +64,9 @@
 .homeService3 h1{
     text-align: left;
 }
+@media screen and (max-width: 600px) {
+    .homeService3,.homeService1,.homeService2{
+        width: 100%;
+    }
+  }
+  
